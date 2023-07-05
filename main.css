@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: Trebuchet MS, Helvetica;
+}
+
+/* Шапка сайта */
+
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%;
+  background: transparent;
+  float: right;
+  position: fixed;
+}
+
+header #logo {
+  color: #fff;
+  cursor: pointer;
+}
+
+header #logo span {
+  font-size: 1.9em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: 'Suez One', serif;
+}
+
+@media (min-width: 701px) {
+  #logo {
+    float: left;
+    width: 30%;
+    font-size: 1.1em;
+  }
+
+  #about {
+    float: right;
+    width: 67%;
+  }
+}
+
+#about {
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+#about > a {color: #fff}
+
+#about > a:hover {
+  color: #b0b0b0;
+  text-decoration: underline;
+}
+
+#about > a:not(:last-child) {
+  margin-right: 7%;
+}
+
+/* Стиль шапки */
+
+.fixed {
+  z-index: 5000;
+  background-color: #fff;
+  border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+  color: #343434;
+}
+
+.fixed #about a {color: #343434}
+.fixed #about a:hover {color: #7c7c7c}
+
+/* Главная часть сайта */
+
+#top {
+  width: 100%;
+  background-image: url(main.jpg);
+  background-blend-mode: multiply;
+  background-color: #2e3a44;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+@media (min-width: 1001px) {
+  #top {
+    font-size: 3em;
+    height: 1000px;
+  }
+}
+
+#top h1 {
+  padding-top: 20%;
+}
+
+#top h3 {
+  color: #ccc;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+}
+
+/* Блок с биограф */
+
+#main {
+  float: left;
+  background-color: #f9f2f5;
+  border-top: 10px dashed #000000;
+  border-bottom: 10px dashed #000000;
+  color: black;
+  font-size: 1.3em;
+  height: 1850px;
+}
+
+#main .img {
+  position: relative;
+  top: -1600px;
+  float: left;
+  width: 39%;
+  margin-right: 12%;
+  margin-top: 90px;
+  overflow: hidden;
+}
+
+#main img {
+  background: #fdc0c0;
+  padding: 10px;
+  border: 8px solid black;
+  float: left;
+  width: 80%;
+  max-width: 500px;
+}
+
+img {
+  transition: transform 0.25s;
+}
+
+.photo:hover img {
+  transform: scale(1.1);
+}
+
+@media (min-width: 1401px) {
+  #main {
+    padding: 100px 20%;
+    width: 60%;
+  }
+}
+
+#main div {
+  width: 48%;
+  margin-right: 2%;
+  float: left;
+}
+
+#main h2 {font-size: 3em; margin-bottom: 25px}
+#main h3 {color: orange}}
+#main span {color: #a0a0a0}
+
+/* Блок с пластинками */
+
+#musik {
+  float: left;
+  background-image: url(https://s0.rbk.ru/v6_top_pics/resized/1440xH/media/img/9/04/756066409307049.jpg);
+  background-blend-mode: multiply;
+  background-color: #403f40;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+#musik h2 {font-size: 8em; margin-bottom: 25px}
+#musik h4 {color: #ccc; font-size: 1.5em}
+
+#musik .img {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+#musik .img:nth-child(odd) {
+  margin-left: 18%;
+}
+
+#musik img {
+  background: #fafafa;
+  padding: 5px;
+  border: 2px solid silver;
+  float: left;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 100px;
+}
+
+#controls2 {
+  margin-top: 25px;
+  margin-right: 50px;
+}
+
+#musik span {
+  float: left;
+  width: 100%;
+  font-size: 2em;
+  margin-top: 10px;
+  margin-left: -25px;
+}
+
+@media (max-width: 700px) {
+  #musik .img {
+    width: 80%!important;
+    margin-right: 0!important;
+    margin-left: 10%!important;
+  }
+}
+
+/* Блок с фото */
+
+#foto {
+  width: 100%;
+  height: 852px;
+  float: left;
+  padding-bottom: 95px;
+  padding-top: 100px;
+  border-bottom: 40px solid #000000;
+  border-top: 40px solid #000000;
+}
+
+#foto h5 {font-size: 10em; color: black}
+
+h5 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+}
+
+.video{
+  position: relative;
+  pudding-bottom: 56.25%;
+}
+
+.video_media{
+  width: 1868px;
+  height: 1209px;
+  position: absolute;
+  top: 6350px;
+  left: 0;
+  opacity: 0.8;
+}
+
+.slides {
+    padding: 0;
+    width: 609px;
+    height: 510px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    background: black;
+    border: 12px solid black;
+    width: 100%;
+    max-width: 608px;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 460px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 140px;
+    height: 0;
+    display: none;
+    position: absolute;
+
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+  width: 100%;
+  bottom: 16px;
+  height: 13px;
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+
+.nav-dots .nav-dot {
+  top: -5px;
+  width: 11px;
+  height: 11px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: rgb(252, 252, 252);;
+}
+
+.nav-dots .nav-dot:hover {
+  cursor: pointer;
+  background-color: rgb(230, 101, 101);;;
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6,
+input#img-7:checked ~ .nav-dots label#img-dot-7,
+input#img-8:checked ~ .nav-dots label#img-dot-8,
+input#img-9:checked ~ .nav-dots label#img-dot-9,
+input#img-10:checked ~ .nav-dots label#img-dot-10,
+input#img-11:checked ~ .nav-dots label#img-dot-11,
+input#img-12:checked ~ .nav-dots label#img-dot-12,
+input#img-13:checked ~ .nav-dots label#img-dot-13,
+input#img-14:checked ~ .nav-dots label#img-dot-14 {
+  background: rgb(230, 101, 101);
+}
+
+/* Блок с альбомами */
+
+#albom {
+  float: left;
+  background-image: url(https://morgenshtern-concert.ru/wp-content/uploads/2023/02/morgenshtern-2023-live.jpg);
+  background-blend-mode: multiply;
+  background-color: #403f40;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+#albom h2 {font-size: 8em; margin-bottom: 25px}
+#albom h4 {color: #ccc; font-size: 1.5em}
+#albom h3 {color: #ccc; font-size: 1.2em}
+
+#albom .img {
+  float: left;
+  width: 30%;
+}
+
+#albom .img:nth-child(odd) {
+  margin-left: 18%;
+}
+
+#albom img {
+  background: #fafafa;
+  padding: 5px;
+  border: 2px solid silver;
+  float: left;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 100px;
+}
+
+#albom span1 {
+  float: left;
+  width: 100%;
+  font-size: 2em;
+  margin-top: 10px;
+  margin-left: 325px;
+}
+
+#albom span {
+  float: left;
+  width: 100%;
+  font-size: 1.2em;
+  margin-top: 10px;
+  margin-left: 325px;
+}
+
+.change-color-link:hover{
+  color: #ffa000;
+}
+
+@media (max-width: 700px) {
+  #albom .img {
+    width: 80%!important;
+    margin-right: 0!important;
+    margin-left: 10%!important;
+  }
+}
+
+/* Автор */
+
+#after {
+  background-color: #fff;
+  border-top: 10px dashed #000000;
+  width: 100%;
+  float: left;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+@
+
+#after .title {
+  font-weight: lighter;
+  color: #black;
+  margin-bottom: 20px;
+  font-size: 3.2em;
+}
+
+#after .heading {
+  font-weight: lighter;
+  color: #6b6b6b;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
